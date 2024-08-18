@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+section{
+    display: inline;
+}
+
+.flex{
+    display: flex;
+}
+
+.div-bt{
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* expand button css */
+.btn-expand {
+    transition: transform 0.3s ease;
+}
+.btn-expand.expanded {
+    transform: scale(1.5);
+}
+
+/* rotate button css */
+.btn-rotate {
+    transition: transform 1.5s ease, background-color 1.5s ease;
+}
+.btn-rotate.rotated {
+    transform: rotate(360deg);
+    background-color: cadetblue;
+}
+
+/* sliding element css */
+.sliding-div {
+    width: 100px;
+    height: 100px;
+    background-color: #84a9ac;
+    border-radius: 10px;
+    position: relative;
+    left: 0px; 
+    transition: left 3s ease-in-out;
+}
+.sliding-div.slid-in {
+    left: 1000px; 
+}
